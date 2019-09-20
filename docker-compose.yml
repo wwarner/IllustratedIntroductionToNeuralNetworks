@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  jupyter:
+    build:
+      context: .
+#    volumes:
+#      - .:/home/jovyan/work
+    expose:
+      - "8888"
+    ports:
+      - "443:8888"
